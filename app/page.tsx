@@ -387,16 +387,16 @@ export default function DashboardPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               
               {/* Card 1: Ventas Totales */}
-              <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-xs hover:shadow-md transition-all flex items-center justify-between group">
+              <div className="bg-white p-5 rounded-2xl border border-slate-100/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] hover:shadow-md transition-all flex items-center justify-between group">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-2xl bg-[#EEF0FF] flex items-center justify-center text-[#4E47FF] group-hover:scale-105 transition-transform">
-                    <CartIcon className="w-5 h-5" />
+                  <div className="w-12 h-12 rounded-2xl bg-[#F0F2FD] flex items-center justify-center text-[#4E47FF] group-hover:scale-105 transition-transform">
+                    <CartIcon className="w-5 h-5 text-[#4E47FF]" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-bold text-slate-400 block mb-0.5">Ventas Totales</span>
-                    <div className="flex items-baseline gap-2.5">
-                      <span className="text-2xl font-black text-[#1E293B] tracking-tight">263k</span>
-                      <span className="inline-flex items-center text-[11px] font-extrabold text-[#10B981]">
+                    <span className="text-[12px] font-medium text-[#94A3B8] block mb-0.5">Ventas Totales</span>
+                    <div className="flex items-baseline gap-2">
+                      <span className="text-2xl font-bold text-[#1E293B] tracking-tight">263k</span>
+                      <span className="inline-flex items-center text-[11px] font-bold text-[#10B981]">
                         ↑ 15.6%
                       </span>
                     </div>
@@ -405,16 +405,16 @@ export default function DashboardPage() {
               </div>
 
               {/* Card 2: Visitantes Totales */}
-              <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-xs hover:shadow-md transition-all flex items-center justify-between group">
+              <div className="bg-white p-5 rounded-2xl border border-slate-100/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] hover:shadow-md transition-all flex items-center justify-between group">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-2xl bg-[#EEF0FF] flex items-center justify-center text-[#4E47FF] group-hover:scale-105 transition-transform">
-                    <TwoUsersIcon className="w-5 h-5" />
+                  <div className="w-12 h-12 rounded-2xl bg-[#F0F2FD] flex items-center justify-center text-[#4E47FF] group-hover:scale-105 transition-transform">
+                    <TwoUsersIcon className="w-5 h-5 text-[#4E47FF]" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-bold text-slate-400 block mb-0.5">Visitantes Totales</span>
-                    <div className="flex items-baseline gap-2.5">
-                      <span className="text-2xl font-black text-[#1E293B] tracking-tight">35k</span>
-                      <span className="inline-flex items-center text-[11px] font-extrabold text-[#EF4444]">
+                    <span className="text-[12px] font-medium text-[#94A3B8] block mb-0.5">Visitantes Totales</span>
+                    <div className="flex items-baseline gap-2">
+                      <span className="text-2xl font-bold text-[#1E293B] tracking-tight">35k</span>
+                      <span className="inline-flex items-center text-[11px] font-bold text-[#EF4444]">
                         ↓ 6.2%
                       </span>
                     </div>
@@ -423,16 +423,16 @@ export default function DashboardPage() {
               </div>
 
               {/* Card 3: Pedidos Totales */}
-              <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-xs hover:shadow-md transition-all flex items-center justify-between group">
+              <div className="bg-white p-5 rounded-2xl border border-slate-100/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] hover:shadow-md transition-all flex items-center justify-between group">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-2xl bg-[#EEF0FF] flex items-center justify-center text-[#4E47FF] group-hover:scale-105 transition-transform">
-                    <OrdersBagIcon className="w-5 h-5" />
+                  <div className="w-12 h-12 rounded-2xl bg-[#F0F2FD] flex items-center justify-center text-[#4E47FF] group-hover:scale-105 transition-transform">
+                    <OrdersBagIcon className="w-5 h-5 text-[#4E47FF]" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-bold text-slate-400 block mb-0.5">Pedidos Totales</span>
-                    <div className="flex items-baseline gap-2.5">
-                      <span className="text-2xl font-black text-[#1E293B] tracking-tight">165k</span>
-                      <span className="inline-flex items-center text-[11px] font-extrabold text-[#10B981]">
+                    <span className="text-[12px] font-medium text-[#94A3B8] block mb-0.5">Pedidos Totales</span>
+                    <div className="flex items-baseline gap-2">
+                      <span className="text-2xl font-bold text-[#1E293B] tracking-tight">165k</span>
+                      <span className="inline-flex items-center text-[11px] font-bold text-[#10B981]">
                         ↑ 3.5%
                       </span>
                     </div>
@@ -446,34 +446,34 @@ export default function DashboardPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
               
               {/* Columna Izquierda (7 cols): Sesiones de la Tienda Online */}
-              <div className="lg:col-span-7 bg-white p-7 rounded-3xl border border-slate-100 shadow-xs flex flex-col justify-between">
+              <div className="lg:col-span-7 bg-white p-6 rounded-3xl border border-slate-100/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] flex flex-col justify-between">
                 <div>
                   {/* Título de Sesiones + Botón Ver Reporte */}
                   <div className="flex items-center justify-between mb-4">
-                    <h2 className="text-[15px] font-black text-[#1E293B]">Sesiones de la Tienda Online</h2>
-                    <button className="text-[11px] font-bold text-slate-500 border border-slate-200/90 rounded-xl px-3.5 py-1.5 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                    <h2 className="text-[14px] font-bold text-[#1E293B]">Sesiones de la Tienda Online</h2>
+                    <button className="text-[11px] font-semibold text-slate-500 border border-slate-200/90 rounded-xl px-3 py-1 hover:bg-slate-50 hover:text-slate-900 transition-colors">
                       Ver Reporte
                     </button>
                   </div>
 
                   {/* Detalle Visitantes 68 y estadísticas */}
-                  <div className="flex items-center justify-between py-2 border-b border-slate-100/70 mb-5">
+                  <div className="flex items-center justify-between py-2 border-b border-slate-100/70 mb-4">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-xl bg-[#EEF0FF] flex items-center justify-center text-[#4E47FF]">
-                        <TwoUsersIcon className="w-4 h-4" />
+                      <div className="w-10 h-10 rounded-xl bg-[#F0F2FD] flex items-center justify-center text-[#4E47FF]">
+                        <TwoUsersIcon className="w-4 h-4 text-[#4E47FF]" />
                       </div>
                       <div>
                         <span className="text-[10px] uppercase font-bold tracking-wider text-slate-400 block">Visitantes</span>
-                        <span className="text-2xl font-black text-[#1E293B]">68</span>
+                        <span className="text-2xl font-bold text-[#1E293B]">68</span>
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-4 text-xs font-black">
+                    <div className="flex items-center gap-4 text-xs font-bold">
                       <span className="inline-flex items-center text-[#10B981]">
                         ↑ 15.6%
                       </span>
                       <div className="flex items-center gap-1.5">
-                        <span className="text-[#4E47FF] font-black text-sm">26</span>
+                        <span className="text-[#4E47FF] font-bold text-sm">26</span>
                         <span className="inline-flex items-center text-[#EF4444] text-[11px]">
                           ↓ 1.6%
                         </span>
@@ -482,9 +482,9 @@ export default function DashboardPage() {
                   </div>
 
                   {/* Selector de Mes: Sesiones en el Tiempo */}
-                  <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center justify-between mb-3">
                     <span className="text-xs font-bold text-slate-700">Sesiones en el Tiempo</span>
-                    <button className="flex items-center gap-1.5 text-[11px] font-bold text-slate-500 bg-slate-50 border border-slate-200/80 rounded-lg px-2.5 py-1 hover:bg-slate-100 transition-colors">
+                    <button className="flex items-center gap-1.5 text-[11px] font-semibold text-slate-500 bg-slate-50/70 border border-slate-200/80 rounded-lg px-2.5 py-1 hover:bg-slate-100 transition-colors">
                       <svg className="w-3 h-3 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
                         <line x1="16" y1="2" x2="16" y2="6" />
@@ -500,7 +500,7 @@ export default function DashboardPage() {
                   {/* Gráfico Curvo Interactivo con SVG */}
                   <div className="relative h-44 w-full pt-2">
                     {/* Líneas horizontales de guía */}
-                    <div className="absolute inset-0 flex flex-col justify-between pointer-events-none text-[10px] font-bold text-slate-300">
+                    <div className="absolute inset-0 flex flex-col justify-between pointer-events-none text-[10px] font-semibold text-slate-300">
                       <div className="flex items-center gap-2">
                         <span className="w-5">15</span>
                         <div className="flex-1 border-b border-slate-100"></div>
@@ -523,7 +523,7 @@ export default function DashboardPage() {
                     <svg className="absolute inset-0 w-full h-full overflow-visible pl-6" viewBox="0 0 420 160" preserveAspectRatio="none">
                       <defs>
                         <linearGradient id="gradientWave" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="0%" stopColor="#4E47FF" stopOpacity="0.25" />
+                          <stop offset="0%" stopColor="#4E47FF" stopOpacity="0.22" />
                           <stop offset="100%" stopColor="#4E47FF" stopOpacity="0.0" />
                         </linearGradient>
                       </defs>
@@ -539,7 +539,7 @@ export default function DashboardPage() {
                         d="M 30 145 C 50 140, 70 85, 100 80 C 130 75, 140 130, 170 130 C 200 130, 210 75, 240 75 C 270 75, 280 125, 310 125 C 340 125, 360 25, 390 25"
                         fill="none"
                         stroke="#4E47FF"
-                        strokeWidth="3.2"
+                        strokeWidth="3"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                       />
@@ -562,7 +562,7 @@ export default function DashboardPage() {
                     {/* Tooltip Dinámico */}
                     {hoveredPoint !== null && (
                       <div
-                        className="absolute z-10 bg-slate-900 text-white text-[11px] font-bold px-2.5 py-1 rounded-lg shadow-xl pointer-events-none transform -translate-x-1/2 -translate-y-8 transition-all"
+                        className="absolute z-10 bg-slate-900 text-white text-[11px] font-semibold px-2.5 py-1 rounded-lg shadow-xl pointer-events-none transform -translate-x-1/2 -translate-y-8 transition-all"
                         style={{
                           left: `${(chartPoints[hoveredPoint].x / 420) * 100}%`,
                           top: `${(chartPoints[hoveredPoint].y / 160) * 100}%`,
@@ -590,9 +590,9 @@ export default function DashboardPage() {
                       <button
                         key={day}
                         onClick={() => setSelectedDay(day)}
-                        className={`w-7 h-7 rounded-full text-xs font-bold flex items-center justify-center transition-all ${
+                        className={`w-7 h-7 rounded-full text-xs font-semibold flex items-center justify-center transition-all ${
                           selectedDay === day
-                            ? "bg-[#4E47FF] text-white shadow-md shadow-[#4E47FF]/40 scale-110"
+                            ? "bg-[#4E47FF] text-white shadow-[0_4px_12px_rgba(78,71,255,0.4)] scale-110 font-bold"
                             : "text-slate-400 hover:text-slate-700 hover:bg-slate-100"
                         }`}
                       >
@@ -616,28 +616,28 @@ export default function DashboardPage() {
               <div className="lg:col-span-5 flex flex-col gap-6">
                 
                 {/* Banner Promocional Morado */}
-                <div className="bg-gradient-to-r from-[#5044E4] to-[#4335E8] p-7 rounded-3xl text-white shadow-lg shadow-[#4E47FF]/20 relative overflow-hidden flex flex-col justify-between min-h-[175px]">
-                  {/* Ilustración de Cohetes / Flechas ascendentes exacta */}
-                  <div className="absolute right-2 -bottom-2 pointer-events-none select-none">
+                <div className="bg-gradient-to-r from-[#4F46E5] to-[#4338CA] p-6 rounded-3xl text-white shadow-[0_10px_25px_-5px_rgba(79,70,229,0.3)] relative overflow-hidden flex flex-col justify-between min-h-[175px]">
+                  {/* Ilustración exacta de persona subiendo por flechas */}
+                  <div className="absolute right-1 -bottom-2 pointer-events-none select-none">
                     <svg className="w-36 h-36" viewBox="0 0 160 160" fill="none">
-                      <path d="M120 160 C 120 100, 140 70, 130 30" stroke="#7062FF" strokeWidth="6" strokeLinecap="round" />
-                      <path d="M90 160 C 90 110, 100 80, 95 50" stroke="#7062FF" strokeWidth="5" strokeLinecap="round" />
-                      <circle cx="130" cy="22" r="7" fill="#FBBF24" />
-                      <polygon points="130,12 138,28 122,28" fill="#FFFFFF" />
-                      <path d="M125 35 L 135 35 L 138 52 L 122 52 Z" fill="#FFFFFF" />
-                      <polygon points="95,40 102,52 88,52" fill="#FFFFFF" />
+                      <path d="M125 160 C 125 100, 145 70, 135 30" stroke="#6366F1" strokeWidth="6" strokeLinecap="round" />
+                      <path d="M95 160 C 95 110, 105 80, 100 50" stroke="#6366F1" strokeWidth="5" strokeLinecap="round" />
+                      <circle cx="135" cy="22" r="7" fill="#FBBF24" />
+                      <polygon points="135,12 143,28 127,28" fill="#FFFFFF" />
+                      <path d="M130 35 L 140 35 L 143 52 L 127 52 Z" fill="#FFFFFF" />
+                      <polygon points="100,40 107,52 93,52" fill="#FFFFFF" />
                     </svg>
                   </div>
 
-                  <div className="relative z-10 max-w-[210px]">
-                    <h3 className="text-base font-black tracking-tight mb-1.5 leading-snug">¿Necesitas más estadísticas?</h3>
-                    <p className="text-[11px] text-indigo-100 font-medium leading-relaxed mb-4">
+                  <div className="relative z-10 max-w-[215px]">
+                    <h3 className="text-base font-bold tracking-tight mb-1.5 leading-snug">¿Necesitas más estadísticas?</h3>
+                    <p className="text-[11px] text-indigo-100 font-normal leading-relaxed mb-4">
                       Actualiza a versión pro para beneficios adicionales.
                     </p>
                   </div>
 
                   <div className="relative z-10">
-                    <button className="bg-[#10B981] hover:bg-[#059669] text-white text-xs font-extrabold px-4 py-2.5 rounded-xl flex items-center gap-2 shadow-md shadow-[#10B981]/30 hover:scale-[1.03] active:scale-[0.97] transition-all">
+                    <button className="bg-[#10B981] hover:bg-[#059669] text-white text-xs font-bold px-4 py-2.5 rounded-xl flex items-center gap-2 shadow-md shadow-[#10B981]/30 hover:scale-[1.03] active:scale-[0.97] transition-all">
                       <div className="w-4 h-4 rounded-full border-2 border-white flex items-center justify-center">
                         <svg className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                           <line x1="7" y1="17" x2="17" y2="7" />
@@ -649,20 +649,20 @@ export default function DashboardPage() {
                   </div>
                 </div>
 
-                {/* Módulo Conversión MILIMÉTRICO (con gráfico semi donut bicoloreado, 58,19% e Ingresos/Gastos) */}
-                <div className="bg-white p-6 rounded-3xl border border-slate-100 shadow-xs flex flex-col justify-between">
+                {/* Módulo Conversión MILIMÉTRICO (con gráfico semi donut bicoloreado exacto al diseño) */}
+                <div className="bg-white p-6 rounded-3xl border border-slate-100/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] flex flex-col justify-between">
                   <div className="flex items-center justify-between mb-1">
-                    <h3 className="text-[15px] font-black text-[#1E293B]">Conversión</h3>
+                    <h3 className="text-[14px] font-bold text-[#1E293B]">Conversión</h3>
                   </div>
 
                   {/* Gráfico de Medio Anillo (Semi Donut Bicolor Exacto) */}
                   <div className="relative flex flex-col items-center justify-center pt-2 pb-1">
-                    <svg className="w-60 h-32 overflow-visible" viewBox="0 0 200 110">
+                    <svg className="w-56 h-28 overflow-visible" viewBox="0 0 200 100">
                       {/* Segmento 2: Fondo Azul Claro Desactivado (41.81%) */}
                       <path
                         d="M 148 42 A 80 80 0 0 1 180 100"
                         fill="none"
-                        stroke="#EEF0FF"
+                        stroke="#F0F2FD"
                         strokeWidth="24"
                         strokeLinecap="round"
                       />
@@ -677,28 +677,28 @@ export default function DashboardPage() {
                     </svg>
 
                     {/* Porcentaje Central y Crecimiento */}
-                    <div className="text-center -mt-8 mb-2">
-                      <span className="text-3xl font-black text-[#1E293B] block tracking-tight">58,19%</span>
-                      <span className="inline-flex items-center text-[11px] font-black text-[#10B981] mt-0.5">
+                    <div className="text-center -mt-7 mb-2">
+                      <span className="text-2xl font-black text-[#1E293B] block tracking-tight">58,19%</span>
+                      <span className="inline-flex items-center text-[11px] font-bold text-[#10B981] mt-0.5">
                         ↑ 3.5%
                       </span>
                     </div>
                   </div>
 
                   {/* Resumen Inferior: Ingresos ($542,317) y Gastos ($497,456) */}
-                  <div className="grid grid-cols-2 gap-4 pt-3.5 border-t border-slate-100 mt-2">
-                    <div className="flex items-center gap-2.5">
-                      <span className="text-[#10B981] text-sm font-black">✓</span>
+                  <div className="grid grid-cols-2 gap-4 pt-3 border-t border-slate-100 mt-2">
+                    <div className="flex items-center gap-2">
+                      <span className="text-[#10B981] text-xs font-bold">✓</span>
                       <div>
-                        <span className="text-[10px] font-bold text-slate-400 block leading-tight">Ingresos</span>
-                        <span className="text-xs font-black text-[#1E293B] leading-tight">$542,317</span>
+                        <span className="text-[10px] font-medium text-slate-400 block leading-tight">Ingresos</span>
+                        <span className="text-xs font-bold text-[#1E293B] leading-tight">$542,317</span>
                       </div>
                     </div>
-                    <div className="flex items-center gap-2.5">
-                      <span className="text-slate-400 text-sm font-black">↗</span>
+                    <div className="flex items-center gap-2">
+                      <span className="text-slate-400 text-xs font-bold">↗</span>
                       <div>
-                        <span className="text-[10px] font-bold text-slate-400 block leading-tight">Gastos</span>
-                        <span className="text-xs font-black text-[#1E293B] leading-tight">$497,456</span>
+                        <span className="text-[10px] font-medium text-slate-400 block leading-tight">Gastos</span>
+                        <span className="text-xs font-bold text-[#1E293B] leading-tight">$497,456</span>
                       </div>
                     </div>
                   </div>
