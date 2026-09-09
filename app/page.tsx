@@ -598,31 +598,34 @@ export default function DashboardPage() {
                 
                 {/* Banner Promocional Morado con Ilustración Fiel (caminos oscuros y nubes) */}
                 <div className="bg-gradient-to-r from-[#4E47FF] to-[#3B30E8] p-5 rounded-3xl text-white shadow-[0_8px_25px_-5px_rgba(78,71,255,0.35)] relative overflow-hidden flex flex-col justify-between min-h-[160px]">
-                  {/* Ilustración Vectorial Fiel con caminos oscuros ondulados, nubes y cohete */}
-                  <div className="absolute right-0 bottom-0 pointer-events-none select-none">
+                  {/* Ilustración Vectorial Fiel con caminos oscuros ondulados, nubes y lápiz/cohete ascendente */}
+                  <div className="absolute right-3 bottom-0 pointer-events-none select-none">
                     <svg className="w-36 h-36" viewBox="0 0 160 160" fill="none">
-                      {/* Caminos oscuros / senderos */}
-                      <path d="M125 160 C 125 110, 145 80, 130 35" stroke="#1E1B4B" strokeWidth="8" strokeLinecap="round" />
-                      <path d="M95 160 C 95 120, 105 90, 100 60" stroke="#1E1B4B" strokeWidth="6" strokeLinecap="round" />
-                      {/* Cohete estilizado ascendente */}
-                      <path d="M130 18 L137 32 L123 32 Z" fill="#FFFFFF" />
-                      <circle cx="130" cy="27" r="2.5" fill="#EF4444" />
-                      <polygon points="100,50 106,60 94,60" fill="#FFFFFF" />
-                      {/* Nube blanca en la base */}
-                      <ellipse cx="65" cy="135" rx="10" ry="5" fill="#FFFFFF" opacity="0.35" />
-                      <ellipse cx="140" cy="115" rx="8" ry="4" fill="#FFFFFF" opacity="0.25" />
+                      {/* Senda oscura curvada derecha con lápiz cohete en punta */}
+                      <path d="M135 160 C 135 110, 148 70, 142 35" stroke="#161338" strokeWidth="9" strokeLinecap="round" />
+                      <polygon points="142,20 147,35 137,35" fill="#FFFFFF" />
+                      <circle cx="142" cy="23" r="2" fill="#F59E0B" />
+                      
+                      {/* Senda oscura curvada izquierda con lápiz cohete en punta */}
+                      <path d="M110 160 C 110 120, 125 95, 120 65" stroke="#161338" strokeWidth="7" strokeLinecap="round" />
+                      <polygon points="120,52 125,65 115,65" fill="#FFFFFF" />
+                      <circle cx="120" cy="55" r="1.8" fill="#10B981" />
+
+                      {/* Nubes elípticas de vapor en la base */}
+                      <ellipse cx="85" cy="148" rx="14" ry="6" fill="#FFFFFF" opacity="0.3" />
+                      <ellipse cx="145" cy="140" rx="12" ry="5" fill="#FFFFFF" opacity="0.25" />
                     </svg>
                   </div>
 
-                  <div className="relative z-10 max-w-[200px]">
-                    <h3 className="text-[14px] font-black tracking-tight mb-1 leading-tight">¿Necesitas más estadísticas?</h3>
-                    <p className="text-[10px] text-indigo-100 font-medium leading-normal mb-3">
+                  <div className="relative z-10 max-w-[210px]">
+                    <h3 className="text-[14.5px] font-black tracking-tight mb-1.5 leading-snug">¿Necesitas más estadísticas?</h3>
+                    <p className="text-[10px] text-indigo-100/90 font-medium leading-normal mb-3.5">
                       Actualiza a versión pro para beneficios adicionales.
                     </p>
                   </div>
 
                   <div className="relative z-10">
-                    <button className="bg-[#10B981] hover:bg-[#059669] text-white text-[11px] font-bold px-3.5 py-1.5 rounded-xl flex items-center gap-1.5 shadow-[0_6px_15px_-3px_rgba(16,185,129,0.5)] hover:scale-[1.02] active:scale-[0.98] transition-all">
+                    <button className="bg-[#10B981] hover:bg-[#059669] text-white text-[11px] font-bold px-4 py-1.5 rounded-xl flex items-center gap-1.5 shadow-[0_6px_16px_-3px_rgba(16,185,129,0.55)] hover:scale-[1.02] active:scale-[0.98] transition-all">
                       <div className="w-3.5 h-3.5 rounded-full border border-white flex items-center justify-center">
                         <svg className="w-2 h-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                           <line x1="7" y1="17" x2="17" y2="7" />
