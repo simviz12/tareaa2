@@ -193,29 +193,29 @@ export default function DashboardPage() {
       <aside className="w-full lg:w-[240px] xl:w-[250px] bg-white p-6 border-b lg:border-b-0 lg:border-r border-slate-100 flex flex-col justify-between shrink-0 min-h-screen">
         <div>
           {/* Header del Sidebar: Logo Hexágono Amarillo + Flecha Circular */}
-          <div className="flex items-center justify-between mb-7">
+          <div className="flex items-center justify-between mb-8">
             <div className="flex items-center gap-2.5">
                 <HexagonLogo />
-                <span className="text-[22px] font-extrabold tracking-tight text-[#1E293B]">flex</span>
+                <span className="text-[24px] font-extrabold tracking-tight text-[#1E293B]">flex</span>
               </div>
               
               <button 
                 type="button"
                 aria-label="Colapsar"
-                className="w-6 h-6 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:text-slate-600 hover:border-slate-300 transition-colors"
+                className="w-8 h-8 rounded-full border border-slate-200/90 flex items-center justify-center text-slate-400 hover:text-slate-700 hover:border-slate-300 shadow-2xs transition-colors"
               >
-                <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                   <polyline points="15 18 9 12 15 6" />
                 </svg>
               </button>
             </div>
 
-            {/* Menú Principal Compacto */}
+            {/* Menú Principal */}
             <div className="mb-6">
-              <span className="text-[10px] font-bold tracking-wider text-slate-400 uppercase block mb-2 px-2.5">
+              <span className="text-[11px] font-bold tracking-wider text-slate-400 uppercase block mb-2.5 px-3">
                 Menú
               </span>
-              <nav className="space-y-1">
+              <nav className="space-y-1.5">
                 {menuItems.map((item) => {
                   const isActive = activeMenu === item.name;
                   const IconComponent = item.icon;
@@ -223,30 +223,30 @@ export default function DashboardPage() {
                     <button
                       key={item.name}
                       onClick={() => setActiveMenu(item.name)}
-                      className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-2xl text-[12.5px] font-bold transition-all duration-150 group ${
+                      className={`w-full flex items-center justify-between px-4 py-3 rounded-2xl text-[13.5px] font-bold transition-all duration-150 group ${
                         isActive
-                          ? "bg-[#4E47FF] text-white shadow-[0_8px_20px_-4px_rgba(78,71,255,0.4)]"
-                          : "text-slate-500 hover:text-slate-800 hover:bg-slate-50/80"
+                          ? "bg-[#4E47FF] text-white shadow-[0_10px_24px_-4px_rgba(78,71,255,0.45)]"
+                          : "text-slate-500 hover:text-slate-800 hover:bg-slate-50"
                       }`}
                     >
-                      <div className="flex items-center gap-3">
+                      <div className="flex items-center gap-3.5">
                         <IconComponent
-                          className={`w-4 h-4 transition-transform group-hover:scale-105 ${
+                          className={`w-4.5 h-4.5 transition-transform group-hover:scale-105 ${
                             isActive ? "text-white" : "text-slate-400 group-hover:text-slate-700"
                           }`}
                         />
                         <span>{item.name}</span>
                       </div>
 
-                      <div className="flex items-center gap-1">
+                      <div className="flex items-center gap-1.5">
                         {item.badge && (
-                          <span className="bg-[#10B981] text-white text-[9px] font-black px-1.5 py-0.5 rounded-full">
+                          <span className="bg-[#10B981] text-white text-[10px] font-black px-2 py-0.5 rounded-full">
                             {item.badge}
                           </span>
                         )}
                         {item.hasSubmenu && (
                           <svg
-                            className={`w-3 h-3 transition-transform ${
+                            className={`w-3.5 h-3.5 transition-transform ${
                               isActive ? "text-white" : "text-slate-300 group-hover:text-slate-500"
                             }`}
                             viewBox="0 0 24 24"
@@ -264,16 +264,16 @@ export default function DashboardPage() {
               </nav>
             </div>
 
-            {/* Integraciones Compacto */}
+            {/* Integraciones */}
             <div>
-              <span className="text-[10px] font-bold tracking-wider text-slate-400 uppercase block mb-2 px-2.5">
+              <span className="text-[11px] font-bold tracking-wider text-slate-400 uppercase block mb-2.5 px-3">
                 Integraciones
               </span>
-              <div className="space-y-0.5">
+              <div className="space-y-1">
                 {integrations.map((item) => (
                   <button
                     key={item.name}
-                    className="w-full flex items-center gap-3 px-3.5 py-2 rounded-xl text-[12.5px] font-semibold text-slate-500 hover:text-slate-800 hover:bg-slate-50 transition-colors"
+                    className="w-full flex items-center gap-3.5 px-4 py-2.5 rounded-xl text-[13px] font-semibold text-slate-500 hover:text-slate-800 hover:bg-slate-50 transition-colors"
                   >
                     {item.icon}
                     <span>{item.name}</span>
@@ -284,9 +284,9 @@ export default function DashboardPage() {
           </div>
 
           {/* Botón de Cerrar Sesión */}
-          <div className="pt-4 border-t border-slate-100">
-            <button className="flex items-center gap-2.5 px-3 py-1.5 text-slate-400 hover:text-rose-600 text-[12px] font-bold rounded-xl hover:bg-rose-50/60 transition-all group w-full">
-              <LogoutIcon className="w-3.5 h-3.5 text-slate-400 group-hover:text-rose-600 transition-colors" />
+          <div className="pt-5 border-t border-slate-100">
+            <button className="flex items-center gap-3 px-4 py-2.5 text-slate-400 hover:text-rose-600 text-[13px] font-bold rounded-xl hover:bg-rose-50/60 transition-all group w-full">
+              <LogoutIcon className="w-4 h-4 text-slate-400 group-hover:text-rose-600 transition-colors" />
               <span>Cerrar sesión</span>
             </button>
           </div>
@@ -343,24 +343,24 @@ export default function DashboardPage() {
                 <h1 className="text-xl font-black text-[#1E293B] tracking-tight">Dashboard</h1>
               </div>
 
-              <div className="flex items-center gap-2.5">
+              <div className="flex items-center gap-3">
                 {/* Selector de Período Temporal */}
-                <button className="flex items-center gap-2 bg-white border border-slate-200/90 hover:border-slate-300 px-3.5 py-1.5 rounded-xl text-xs font-bold text-slate-600 shadow-2xs transition-all hover:bg-slate-50">
-                  <svg className="w-3.5 h-3.5 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <button className="flex items-center gap-2.5 bg-white border border-slate-200 hover:border-slate-300 px-4 py-2.5 rounded-2xl text-[13px] font-bold text-slate-700 shadow-xs transition-all hover:bg-slate-50">
+                  <svg className="w-4 h-4 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <rect x="3" y="4" width="18" height="18" rx="2" />
                     <line x1="16" y1="2" x2="16" y2="6" />
                     <line x1="8" y1="2" x2="8" y2="6" />
                     <line x1="3" y1="10" x2="21" y2="10" />
                   </svg>
                   <span>Este Mes</span>
-                  <svg className="w-3 h-3 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <svg className="w-3.5 h-3.5 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                     <polyline points="6 9 12 15 18 9" />
                   </svg>
                 </button>
 
                 {/* Botón Verde Descargar Reporte con Sombra Verde Marcada */}
-                <button className="flex items-center gap-2 bg-[#10B981] hover:bg-[#059669] text-white text-xs font-bold px-4 py-1.5 rounded-xl shadow-[0_8px_20px_-3px_rgba(16,185,129,0.45)] hover:scale-[1.02] active:scale-[0.98] transition-all">
-                  <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <button className="flex items-center gap-2.5 bg-[#10B981] hover:bg-[#059669] text-white text-[13px] font-bold px-5 py-2.5 rounded-2xl shadow-[0_10px_24px_-3px_rgba(16,185,129,0.5)] hover:scale-[1.02] active:scale-[0.98] transition-all">
+                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                     <polyline points="7 10 12 15 17 10" />
                     <line x1="12" y1="15" x2="12" y2="3" />
@@ -430,32 +430,32 @@ export default function DashboardPage() {
               <div className="lg:col-span-7 bg-white p-5 lg:p-6 rounded-3xl border border-slate-100 shadow-[0_2px_12px_rgba(0,0,0,0.02)] flex flex-col justify-between">
                 <div>
                   {/* Título de Sesiones + Botón Ver Reporte */}
-                  <div className="flex items-center justify-between mb-3">
-                    <h2 className="text-[13.5px] font-bold text-[#1E293B]">Sesiones de la Tienda Online</h2>
-                    <button className="text-[10.5px] font-semibold text-slate-400 border border-slate-200/90 rounded-xl px-2.5 py-1 hover:bg-slate-50 hover:text-slate-800 transition-colors">
+                  <div className="flex items-center justify-between mb-3.5">
+                    <h2 className="text-[14px] font-bold text-[#1E293B]">Sesiones de la Tienda Online</h2>
+                    <button className="text-[12px] font-bold text-slate-600 border border-slate-200 rounded-xl px-3.5 py-1.5 hover:bg-slate-50 hover:text-slate-900 shadow-2xs transition-all">
                       Ver Reporte
                     </button>
                   </div>
 
                   {/* Detalle Visitantes 68 y porcentajes */}
-                  <div className="flex items-center justify-between py-1.5 border-b border-slate-100/70 mb-3">
-                    <div className="flex items-center gap-2.5">
-                      <div className="w-8 h-8 rounded-xl bg-[#EEF0FF] flex items-center justify-center text-[#4E47FF]">
-                        <TwoUsersIcon className="w-3.5 h-3.5 text-[#4E47FF]" />
+                  <div className="flex items-center justify-between py-2 border-b border-slate-100/70 mb-3.5">
+                    <div className="flex items-center gap-3">
+                      <div className="w-9 h-9 rounded-xl bg-[#EEF0FF] flex items-center justify-center text-[#4E47FF]">
+                        <TwoUsersIcon className="w-4 h-4 text-[#4E47FF]" />
                       </div>
                       <div>
-                        <span className="text-[9px] uppercase font-bold tracking-wider text-slate-400 block leading-none mb-0.5">Visitantes</span>
-                        <span className="text-xl font-black text-[#1E293B] leading-none">68</span>
+                        <span className="text-[10px] uppercase font-bold tracking-wider text-slate-400 block leading-none mb-0.5">Visitantes</span>
+                        <span className="text-2xl font-black text-[#1E293B] leading-none">68</span>
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-3 text-[11px] font-bold">
+                    <div className="flex items-center gap-3.5 text-[12px] font-bold">
                       <span className="inline-flex items-center text-[#10B981]">
                         ↑ 15.6%
                       </span>
                       <div className="flex items-center gap-1">
-                        <span className="text-[#4E47FF] font-black text-xs">26</span>
-                        <span className="inline-flex items-center text-[#EF4444] text-[10px]">
+                        <span className="text-[#4E47FF] font-black text-[13px]">26</span>
+                        <span className="inline-flex items-center text-[#EF4444] text-[11px]">
                           ↓ 1.6%
                         </span>
                       </div>
@@ -463,16 +463,16 @@ export default function DashboardPage() {
                   </div>
 
                   {/* Selector de Mes: Sesiones en el Tiempo */}
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-[11.5px] font-bold text-slate-700">Sesiones en el Tiempo</span>
-                    <button className="flex items-center gap-1 text-[10.5px] font-semibold text-slate-500 bg-slate-50/70 border border-slate-200/80 rounded-lg px-2 py-0.5 hover:bg-slate-100 transition-colors">
-                      <svg className="w-3 h-3 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <div className="flex items-center justify-between mb-2.5">
+                    <span className="text-[12.5px] font-bold text-slate-700">Sesiones en el Tiempo</span>
+                    <button className="flex items-center gap-1.5 text-[11.5px] font-bold text-slate-600 bg-white border border-slate-200/90 rounded-xl px-3 py-1 hover:bg-slate-50 shadow-2xs transition-all">
+                      <svg className="w-3.5 h-3.5 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <rect x="3" y="4" width="18" height="18" rx="2" />
                         <line x1="16" y1="2" x2="16" y2="6" />
                         <line x1="8" y1="2" x2="8" y2="6" />
                       </svg>
                       <span>Febrero</span>
-                      <svg className="w-3 h-3 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                      <svg className="w-3.5 h-3.5 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                         <polyline points="6 9 12 15 18 9" />
                       </svg>
                     </button>
@@ -555,26 +555,26 @@ export default function DashboardPage() {
                   </div>
                 </div>
 
-                {/* Barra de Fechas del Calendario Inferior (Día 21 pequeño y elegante) */}
-                <div className="flex items-center justify-center gap-2.5 mt-3 pt-2.5 border-t border-slate-100/60">
+                {/* Barra de Fechas del Calendario Inferior */}
+                <div className="flex items-center justify-center gap-3 mt-4 pt-3 border-t border-slate-100/70">
                   <button 
                     type="button"
                     aria-label="Anterior"
-                    className="w-5 h-5 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:text-slate-600 transition-colors"
+                    className="w-7 h-7 rounded-full border border-slate-200/90 flex items-center justify-center text-slate-400 hover:text-slate-700 hover:border-slate-300 shadow-2xs transition-colors"
                   >
-                    <svg className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                       <polyline points="15 18 9 12 15 6" />
                     </svg>
                   </button>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2.5">
                     {calendarDays.map((day) => (
                       <button
                         key={day}
                         onClick={() => setSelectedDay(day)}
-                        className={`w-6 h-6 rounded-full text-[11px] flex items-center justify-center transition-all ${
+                        className={`w-8 h-8 rounded-full text-[13px] flex items-center justify-center transition-all ${
                           selectedDay === day
-                            ? "bg-[#4E47FF] text-white font-bold shadow-[0_3px_8px_rgba(78,71,255,0.4)]"
-                            : "text-slate-400 hover:text-slate-700 hover:bg-slate-100"
+                            ? "bg-[#4E47FF] text-white font-bold shadow-[0_4px_12px_rgba(78,71,255,0.45)]"
+                            : "text-slate-500 font-semibold hover:text-slate-800 hover:bg-slate-100"
                         }`}
                       >
                         {day}
@@ -584,9 +584,9 @@ export default function DashboardPage() {
                   <button 
                     type="button"
                     aria-label="Siguiente"
-                    className="w-5 h-5 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:text-slate-600 transition-colors"
+                    className="w-7 h-7 rounded-full border border-slate-200/90 flex items-center justify-center text-slate-400 hover:text-slate-700 hover:border-slate-300 shadow-2xs transition-colors"
                   >
-                    <svg className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                       <polyline points="9 18 15 12 9 6" />
                     </svg>
                   </button>
@@ -597,7 +597,7 @@ export default function DashboardPage() {
               <div className="lg:col-span-5 flex flex-col gap-5">
                 
                 {/* Banner Promocional Morado con Ilustración Fiel (caminos oscuros y nubes) */}
-                <div className="bg-gradient-to-r from-[#4E47FF] to-[#3B30E8] p-5 rounded-3xl text-white shadow-[0_8px_25px_-5px_rgba(78,71,255,0.35)] relative overflow-hidden flex flex-col justify-between min-h-[160px]">
+                <div className="bg-gradient-to-r from-[#4E47FF] to-[#3B30E8] p-6 rounded-3xl text-white shadow-[0_8px_25px_-5px_rgba(78,71,255,0.35)] relative overflow-hidden flex flex-col justify-between min-h-[175px]">
                   {/* Ilustración Vectorial Fiel con caminos oscuros ondulados, nubes y lápiz/cohete ascendente */}
                   <div className="absolute right-3 bottom-0 pointer-events-none select-none">
                     <svg className="w-36 h-36" viewBox="0 0 160 160" fill="none">
@@ -618,16 +618,16 @@ export default function DashboardPage() {
                   </div>
 
                   <div className="relative z-10 max-w-[210px]">
-                    <h3 className="text-[14.5px] font-black tracking-tight mb-1.5 leading-snug">¿Necesitas más estadísticas?</h3>
-                    <p className="text-[10px] text-indigo-100/90 font-medium leading-normal mb-3.5">
+                    <h3 className="text-[15px] font-black tracking-tight mb-1.5 leading-snug">¿Necesitas más estadísticas?</h3>
+                    <p className="text-[11px] text-indigo-100/90 font-medium leading-normal mb-4">
                       Actualiza a versión pro para beneficios adicionales.
                     </p>
                   </div>
 
                   <div className="relative z-10">
-                    <button className="bg-[#10B981] hover:bg-[#059669] text-white text-[11px] font-bold px-4 py-1.5 rounded-xl flex items-center gap-1.5 shadow-[0_6px_16px_-3px_rgba(16,185,129,0.55)] hover:scale-[1.02] active:scale-[0.98] transition-all">
-                      <div className="w-3.5 h-3.5 rounded-full border border-white flex items-center justify-center">
-                        <svg className="w-2 h-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                    <button className="bg-[#10B981] hover:bg-[#059669] text-white text-[13px] font-bold px-5 py-2.5 rounded-2xl flex items-center gap-2 shadow-[0_8px_20px_-3px_rgba(16,185,129,0.55)] hover:scale-[1.02] active:scale-[0.98] transition-all">
+                      <div className="w-4 h-4 rounded-full border-2 border-white flex items-center justify-center">
+                        <svg className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                           <line x1="7" y1="17" x2="17" y2="7" />
                           <polyline points="7 7 17 7 17 17" />
                         </svg>
