@@ -188,16 +188,13 @@ export default function DashboardPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F0F2F9] text-[#64748B] font-sans p-2 sm:p-5 lg:p-7 flex items-center justify-center antialiased">
-      {/* Marco Exterior Blanco con bordes redondeados idénticos a la referencia */}
-      <div className="w-full max-w-[1240px] bg-white rounded-[32px] shadow-[0_10px_40px_rgba(0,0,0,0.04)] border border-slate-100 flex flex-col lg:flex-row overflow-hidden">
-        
-        {/* ================= BARRA LATERAL COMPACTA (SIDEBAR) ================= */}
-        <aside className="w-full lg:w-[225px] bg-white p-6 border-b lg:border-b-0 lg:border-r border-slate-100 flex flex-col justify-between shrink-0">
-          <div>
-            {/* Header del Sidebar: Logo Hexágono Amarillo + Flecha Circular */}
-            <div className="flex items-center justify-between mb-7">
-              <div className="flex items-center gap-2">
+    <div className="min-h-screen w-full bg-[#F9FAFD] text-[#64748B] font-sans flex flex-col lg:flex-row antialiased">
+      {/* ================= BARRA LATERAL (SIDEBAR) ================= */}
+      <aside className="w-full lg:w-[240px] xl:w-[250px] bg-white p-6 border-b lg:border-b-0 lg:border-r border-slate-100 flex flex-col justify-between shrink-0 min-h-screen">
+        <div>
+          {/* Header del Sidebar: Logo Hexágono Amarillo + Flecha Circular */}
+          <div className="flex items-center justify-between mb-7">
+            <div className="flex items-center gap-2.5">
                 <HexagonLogo />
                 <span className="text-[22px] font-extrabold tracking-tight text-[#1E293B]">flex</span>
               </div>
@@ -699,7 +696,6 @@ export default function DashboardPage() {
           </main>
         </div>
 
-      </div>
     </div>
   );
 }
