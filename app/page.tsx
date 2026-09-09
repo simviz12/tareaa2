@@ -297,36 +297,36 @@ export default function DashboardPage() {
           
           {/* Header Superior con dimensiones exactas */}
           <header className="h-16 px-6 lg:px-8 flex items-center justify-between border-b border-slate-100/70 bg-white/60 backdrop-blur-sm sticky top-0 z-20">
-            {/* Buscador Píldora Compacto (largo medio exacto) */}
-            <div className="relative w-60 sm:w-72">
-              <svg className="w-3.5 h-3.5 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+            {/* Buscador Píldora */}
+            <div className="relative w-64 sm:w-80">
+              <svg className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <circle cx="11" cy="11" r="8" />
                 <path d="m21 21-4.3-4.3" />
               </svg>
               <input
                 type="text"
                 placeholder="Buscar..."
-                className="w-full bg-[#F2F4FA] text-slate-700 text-xs rounded-full pl-9 pr-3 py-1.5 outline-none border border-transparent focus:border-[#4E47FF]/40 focus:bg-white transition-all"
+                className="w-full bg-[#F2F4FA] text-slate-700 text-[13px] rounded-full pl-10 pr-4 py-2 outline-none border border-transparent focus:border-[#4E47FF]/40 focus:bg-white transition-all"
               />
             </div>
 
             {/* Acciones de Cabecera: Notificaciones, Saldo y Perfil */}
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-6">
               {/* Notificación con badge '1' */}
               <NotificationBellWithBadge />
 
               {/* Saldo de Cuenta */}
               <div className="text-right hidden sm:block">
-                <span className="text-[10px] text-slate-400 font-medium block leading-none mb-0.5">Tu Saldo</span>
-                <span className="text-xs font-black text-[#4E47FF] leading-none">$5.456</span>
+                <span className="text-[11px] text-slate-400 font-medium block leading-none mb-0.5">Tu Saldo</span>
+                <span className="text-[14px] font-black text-[#4E47FF] leading-none">$5.456</span>
               </div>
 
               {/* Avatar circular con borde y foto de Lay */}
-              <div className="flex items-center gap-2 pl-2">
-                <div className="w-8 h-8 rounded-full ring-2 ring-amber-500/80 p-0.5 shadow-xs flex items-center justify-center overflow-hidden bg-amber-100">
-                  <span className="text-sm select-none">🧔🏽</span>
+              <div className="flex items-center gap-2.5 pl-2">
+                <div className="w-9 h-9 rounded-full ring-2 ring-amber-500/80 p-0.5 shadow-xs flex items-center justify-center overflow-hidden bg-amber-100">
+                  <span className="text-base select-none">🧔🏽</span>
                 </div>
-                <span className="text-[11.5px] font-bold text-slate-700 hidden sm:inline">Hola, Lay</span>
+                <span className="text-[13px] font-bold text-slate-700 hidden sm:inline">Hola, Lay</span>
               </div>
             </div>
           </header>
@@ -374,15 +374,15 @@ export default function DashboardPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-5">
               
               {/* Card 1: Ventas Totales */}
-              <div className="bg-white p-4 lg:p-5 rounded-2xl border border-slate-100 shadow-[0_2px_12px_rgba(0,0,0,0.02)] flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-2xl bg-[#EEF0FF] flex items-center justify-center text-[#4E47FF] shrink-0">
-                  <CartIcon className="w-4 h-4 text-[#4E47FF]" />
+              <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-[0_2px_12px_rgba(0,0,0,0.02)] flex items-center gap-4">
+                <div className="w-12 h-12 rounded-2xl bg-[#EEF0FF] flex items-center justify-center text-[#4E47FF] shrink-0">
+                  <CartIcon className="w-5 h-5 text-[#4E47FF]" />
                 </div>
                 <div>
-                  <span className="text-[11px] font-semibold text-slate-400 block mb-0.5">Ventas Totales</span>
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-xl font-extrabold text-[#1E293B] tracking-tight">263k</span>
-                    <span className="inline-flex items-center text-[10.5px] font-bold text-[#10B981]">
+                  <span className="text-[12px] font-semibold text-slate-400 block mb-0.5">Ventas Totales</span>
+                  <div className="flex items-baseline gap-2.5">
+                    <span className="text-2xl font-black text-[#1E293B] tracking-tight">263k</span>
+                    <span className="inline-flex items-center text-[11.5px] font-bold text-[#10B981]">
                       ↑ 15.6%
                     </span>
                   </div>
@@ -390,15 +390,15 @@ export default function DashboardPage() {
               </div>
 
               {/* Card 2: Visitantes Totales */}
-              <div className="bg-white p-4 lg:p-5 rounded-2xl border border-slate-100 shadow-[0_2px_12px_rgba(0,0,0,0.02)] flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-2xl bg-[#EEF0FF] flex items-center justify-center text-[#4E47FF] shrink-0">
-                  <TwoUsersIcon className="w-4 h-4 text-[#4E47FF]" />
+              <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-[0_2px_12px_rgba(0,0,0,0.02)] flex items-center gap-4">
+                <div className="w-12 h-12 rounded-2xl bg-[#EEF0FF] flex items-center justify-center text-[#4E47FF] shrink-0">
+                  <TwoUsersIcon className="w-5 h-5 text-[#4E47FF]" />
                 </div>
                 <div>
-                  <span className="text-[11px] font-semibold text-slate-400 block mb-0.5">Visitantes Totales</span>
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-xl font-extrabold text-[#1E293B] tracking-tight">35k</span>
-                    <span className="inline-flex items-center text-[10.5px] font-bold text-[#EF4444]">
+                  <span className="text-[12px] font-semibold text-slate-400 block mb-0.5">Visitantes Totales</span>
+                  <div className="flex items-baseline gap-2.5">
+                    <span className="text-2xl font-black text-[#1E293B] tracking-tight">35k</span>
+                    <span className="inline-flex items-center text-[11.5px] font-bold text-[#EF4444]">
                       ↓ 6.2%
                     </span>
                   </div>
@@ -406,15 +406,15 @@ export default function DashboardPage() {
               </div>
 
               {/* Card 3: Pedidos Totales */}
-              <div className="bg-white p-4 lg:p-5 rounded-2xl border border-slate-100 shadow-[0_2px_12px_rgba(0,0,0,0.02)] flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-2xl bg-[#EEF0FF] flex items-center justify-center text-[#4E47FF] shrink-0">
-                  <TotalOrdersIcon className="w-4 h-4 text-[#4E47FF]" />
+              <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-[0_2px_12px_rgba(0,0,0,0.02)] flex items-center gap-4">
+                <div className="w-12 h-12 rounded-2xl bg-[#EEF0FF] flex items-center justify-center text-[#4E47FF] shrink-0">
+                  <TotalOrdersIcon className="w-5 h-5 text-[#4E47FF]" />
                 </div>
                 <div>
-                  <span className="text-[11px] font-semibold text-slate-400 block mb-0.5">Pedidos Totales</span>
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-xl font-extrabold text-[#1E293B] tracking-tight">165k</span>
-                    <span className="inline-flex items-center text-[10.5px] font-bold text-[#10B981]">
+                  <span className="text-[12px] font-semibold text-slate-400 block mb-0.5">Pedidos Totales</span>
+                  <div className="flex items-baseline gap-2.5">
+                    <span className="text-2xl font-black text-[#1E293B] tracking-tight">165k</span>
+                    <span className="inline-flex items-center text-[11.5px] font-bold text-[#10B981]">
                       ↑ 3.5%
                     </span>
                   </div>
@@ -638,14 +638,14 @@ export default function DashboardPage() {
                 </div>
 
                 {/* Módulo Conversión Fiel: arco grande semicircular y textos exactos */}
-                <div className="bg-white p-5 rounded-3xl border border-slate-100 shadow-[0_2px_12px_rgba(0,0,0,0.02)] flex flex-col justify-between">
-                  <div className="flex items-center justify-between mb-0.5">
-                    <h3 className="text-[13px] font-bold text-[#1E293B]">Conversión</h3>
+                <div className="bg-white p-6 rounded-3xl border border-slate-100 shadow-[0_2px_12px_rgba(0,0,0,0.02)] flex flex-col justify-between">
+                  <div className="flex items-center justify-between mb-1">
+                    <h3 className="text-[14px] font-bold text-[#1E293B]">Conversión</h3>
                   </div>
 
                   {/* Gráfico de Medio Anillo con proporción amplia idéntica a la referencia */}
-                  <div className="relative flex flex-col items-center justify-center pt-1">
-                    <svg className="w-56 h-28 overflow-visible" viewBox="0 0 200 105">
+                  <div className="relative flex flex-col items-center justify-center pt-2">
+                    <svg className="w-64 h-32 overflow-visible" viewBox="0 0 200 105">
                       {/* Segmento inactivo azul claro suave (41.81%) */}
                       <path
                         d="M 148 42 A 80 80 0 0 1 180 100"
@@ -665,28 +665,28 @@ export default function DashboardPage() {
                     </svg>
 
                     {/* Porcentaje Central y Crecimiento */}
-                    <div className="text-center -mt-7 mb-1.5">
-                      <span className="text-[26px] font-black text-[#1E293B] block tracking-tight leading-none">58,19%</span>
-                      <span className="inline-flex items-center text-[10.5px] font-bold text-[#10B981] mt-1">
+                    <div className="text-center -mt-8 mb-2">
+                      <span className="text-[30px] font-black text-[#1E293B] block tracking-tight leading-none">58,19%</span>
+                      <span className="inline-flex items-center text-[12px] font-bold text-[#10B981] mt-1.5">
                         ↑ 3.5%
                       </span>
                     </div>
                   </div>
 
                   {/* Resumen Inferior: Ingresos ($542,317) y Gastos ($497,456) */}
-                  <div className="grid grid-cols-2 gap-3 pt-2.5 border-t border-slate-100 mt-1">
-                    <div className="flex items-center gap-2">
-                      <span className="text-[#10B981] text-xs font-bold">✓</span>
+                  <div className="grid grid-cols-2 gap-4 pt-3 border-t border-slate-100 mt-2">
+                    <div className="flex items-center gap-2.5">
+                      <span className="text-[#10B981] text-sm font-bold">✓</span>
                       <div>
-                        <span className="text-[9.5px] font-semibold text-slate-400 block leading-tight">Ingresos</span>
-                        <span className="text-xs font-black text-[#1E293B] leading-tight">$542,317</span>
+                        <span className="text-[11px] font-semibold text-slate-400 block leading-tight">Ingresos</span>
+                        <span className="text-[13.5px] font-black text-[#1E293B] leading-tight">$542,317</span>
                       </div>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-slate-400 text-xs font-bold">↗</span>
+                    <div className="flex items-center gap-2.5">
+                      <span className="text-slate-400 text-sm font-bold">↗</span>
                       <div>
-                        <span className="text-[9.5px] font-semibold text-slate-400 block leading-tight">Gastos</span>
-                        <span className="text-xs font-black text-[#1E293B] leading-tight">$497,456</span>
+                        <span className="text-[11px] font-semibold text-slate-400 block leading-tight">Gastos</span>
+                        <span className="text-[13.5px] font-black text-[#1E293B] leading-tight">$497,456</span>
                       </div>
                     </div>
                   </div>
